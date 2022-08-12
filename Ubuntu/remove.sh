@@ -1,0 +1,2 @@
+#!/bin/bash
+sudo apt remove --purge gnome-mahjongg gnome-mines gnome-sudoku aisleriot thunderbird* rhythmbox* deja-dup libreoffice* totem cheese transmission* usb-creator* shotwell* remmina* gnome-todo gnome-shell-extension-ubuntu-dock pidgin hexchat simple-scan eog gimp -y
