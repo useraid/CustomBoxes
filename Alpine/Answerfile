@@ -1,0 +1,20 @@
+KEYMAPOPTS="us us"
+HOSTNAMEOPTS="-n alpbox"
+INTERFACESOPTS="
+auto eth0
+iface eth0 inet dhcp
+        hostname alpbox
+        gateway eth0
+
+auto eth1
+iface eth1 inet static
+        address 192.168.x.y
+        netmask 255.255.255.0
+"
+DNSOPTS="-n 8.8.8.8"
+TIMEZONEOPTS="-z Asia/Kolkata"
+PROXYOPTS="none"
+APKREPOSOPTS="-r"
+SSHDOPTS="-c openssh"
+NTPOPTS="-c chrony"
+DISKOPTS="-m sys /dev/sda"
