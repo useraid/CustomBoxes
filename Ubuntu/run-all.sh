@@ -2,6 +2,7 @@
 
 ./remove.sh
 ./apps.sh
+./git.sh
 ./vscext.sh
 sudo apt update
 sudo apt upgrade
