@@ -5,7 +5,7 @@ ver=$(cut -f2 <<< "$rel")
 if [ "$ver" = "20.04" ];
 then
     # Installing Essentials
-    sudo apt install vlc gnome-tweak-tool gdebi plank gnome-shell-extension-manager -y
+    sudo apt install vlc gnome-tweak-tool gdebi plank gnome-shell-extension-manager curl git -y
     # Installing VS code
     sudo apt-get install wget gpg apt-transport-https -y
     wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
@@ -17,7 +17,7 @@ then
 elif [ "$ver" = "22.04" ];
 then
     # Installing Essentials
-    sudo apt install vlc gnome-tweak-tool gdebi gnome-shell-extension-manager -y
+    sudo apt install vlc gnome-tweak-tool gdebi gnome-shell-extension-manager curl git -y
     # Installing VS code
     sudo apt-get install wget gpg apt-transport-https -y
     wget -qO- https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > packages.microsoft.gpg
